@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/chitranshi-portfolio/static/css/main.d1adfa2c.css",
-    "main.js": "/chitranshi-portfolio/static/js/main.9560f6b6.js",
+    "main.js": "/chitranshi-portfolio/static/js/main.d8f0406c.js",
     "index.html": "/chitranshi-portfolio/index.html",
     "main.d1adfa2c.css.map": "/chitranshi-portfolio/static/css/main.d1adfa2c.css.map",
-    "main.9560f6b6.js.map": "/chitranshi-portfolio/static/js/main.9560f6b6.js.map"
+    "main.d8f0406c.js.map": "/chitranshi-portfolio/static/js/main.d8f0406c.js.map"
   },
   "entrypoints": [
     "static/css/main.d1adfa2c.css",
-    "static/js/main.9560f6b6.js"
+    "static/js/main.d8f0406c.js"
   ]
 }
