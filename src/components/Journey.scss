@@ -1,0 +1,73 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins" as *;
+
+.journey {
+  background: $cream-soft;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  border-left: 2px dashed $line;
+
+  @media (max-width: $bp-mobile) {
+    padding-left: 20px;
+  }
+
+  &__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 24px;
+    padding-bottom: 48px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    left: -34px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $purple;
+    border: 3px solid $cream-soft;
+    box-shadow: 0 0 0 2px $purple;
+
+    @media (max-width: $bp-mobile) {
+      left: -26px;
+    }
+  }
+
+  &__year {
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $purple-deep;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: rgba(23, 20, 15, 0.68);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    &__item {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+  }
+}

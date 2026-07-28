@@ -1,0 +1,112 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins" as *;
+
+.projects {
+  background: $cream-soft;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+
+    @media (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.project-card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  min-height: 320px;
+  transition: transform 0.35s $ease-out, box-shadow 0.35s $ease-out,
+    border-color 0.35s $ease-out;
+
+  &:hover {
+    transform: translateY(-8px) rotate(-0.5deg);
+    box-shadow: 0 26px 40px -22px rgba(23, 20, 15, 0.4);
+    border-color: $purple;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  &__tag {
+    font-family: $font-display;
+    font-weight: 700;
+    color: $purple-deep;
+    font-size: 1.4rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $cream;
+    transition: background 0.25s $ease-out, transform 0.25s $ease-bounce,
+      color 0.25s $ease-out;
+  }
+
+  &:hover &__link {
+    background: $purple;
+    color: $white;
+    transform: rotate(45deg);
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    margin-top: 4px;
+    color: $purple-deep;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  &__points {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+
+    li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: rgba(23, 20, 15, 0.68);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $orange;
+      }
+    }
+  }
+
+  &__stack {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed $line;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(23, 20, 15, 0.55);
+  }
+}

@@ -1,0 +1,75 @@
+@use "../styles/variables" as *;
+@use "../styles/mixins" as *;
+
+.experience {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.exp-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-bottom: 1px solid $line;
+  transition: padding-left 0.3s $ease-out;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:hover {
+    padding-left: 12px;
+  }
+
+  &__period {
+    font-weight: 700;
+    color: $purple-deep;
+    font-size: 0.9rem;
+  }
+
+  &__body {
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .exp-row__company {
+      margin-top: 4px;
+      margin-bottom: 14px;
+      font-weight: 600;
+      color: rgba(23, 20, 15, 0.6);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 18px;
+      line-height: 1.6;
+      color: rgba(23, 20, 15, 0.72);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $purple;
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

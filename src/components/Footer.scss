@@ -1,0 +1,17 @@
+@use "../styles/variables" as *;
+
+.footer {
+  padding: 28px 0 40px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: rgba(23, 20, 15, 0.55);
+    padding-top: 24px;
+    border-top: 1px solid $line;
+  }
+}

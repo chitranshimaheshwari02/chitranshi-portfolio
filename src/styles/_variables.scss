@@ -1,0 +1,28 @@
+// ===== Color tokens (matched to the beige creative-designer reference) =====
+$cream: #f2ede2;
+$cream-soft: #f8f4ec;
+$ink: #17140f;
+$purple: #a99bf0;
+$purple-deep: #7d6ce0;
+$purple-pale: #d9d1f8;
+$orange: #e8804a;
+$white: #ffffff;
+$line: rgba(23, 20, 15, 0.12);
+
+// ===== Type =====
+$font-display: "Baloo 2", "Segoe UI", sans-serif;
+$font-body: "DM Sans", "Segoe UI", sans-serif;
+
+// ===== Layout =====
+$max-width: 1180px;
+$radius-sm: 10px;
+$radius-md: 18px;
+$radius-lg: 28px;
+
+// ===== Motion =====
+$ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+// ===== Breakpoints =====
+$bp-tablet: 900px;
+$bp-mobile: 600px;
