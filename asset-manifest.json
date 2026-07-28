@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chitranshi-portfolio/static/css/main.d1adfa2c.css",
+    "main.js": "/chitranshi-portfolio/static/js/main.5200c918.js",
+    "index.html": "/chitranshi-portfolio/index.html",
+    "main.d1adfa2c.css.map": "/chitranshi-portfolio/static/css/main.d1adfa2c.css.map",
+    "main.5200c918.js.map": "/chitranshi-portfolio/static/js/main.5200c918.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1adfa2c.css",
+    "static/js/main.5200c918.js"
+  ]
+}
